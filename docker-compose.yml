@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:18
+    container_name: pizzaria-api-db
+    environment:
+      - POSTGRES_DB=${POSTGRES_DATABASE}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - ${POSTGRES_PORT}:5432

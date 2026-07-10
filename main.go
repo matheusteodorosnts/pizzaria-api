@@ -4,6 +4,7 @@ import (
 	"log"
 
 	"github.com/joho/godotenv"
+	"github.com/matheusteodorosnts/pizzaria-api/config"
 	"github.com/matheusteodorosnts/pizzaria-api/router"
 )
 
@@ -13,5 +14,6 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
+	config.InitializeConfig()
 	router.Initialize()
 }
