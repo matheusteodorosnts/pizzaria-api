@@ -28,5 +28,5 @@ func CreatePizzaHandler(ctx *gin.Context) {
 		return
 	}
 
-	ctx.JSON(http.StatusCreated, pizza)
+	ctx.JSON(http.StatusCreated, gin.H{"pizza": pizza})
 }

@@ -15,5 +15,5 @@ func ListPizzasHandler(ctx *gin.Context) {
 		return
 	}
 
-	ctx.JSON(http.StatusOK, pizzas)
+	ctx.JSON(http.StatusOK, gin.H{"pizzas": pizzas})
 }

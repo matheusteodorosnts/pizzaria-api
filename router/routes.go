@@ -12,4 +12,5 @@ func initializeRoutes(router *gin.Engine) {
 	v1.GET("/pizzas", handler.ListPizzasHandler)
 	v1.DELETE("/pizzas/:id", handler.DeletePizzaHandler)
 	v1.PATCH("/pizzas/:id", handler.UpdatePizzaHandler)
+	v1.GET("/pizzas/:id", handler.GetPizzaHandler)
 }
