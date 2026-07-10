@@ -75,7 +75,7 @@ POSTGRES_HOST=
 > **Note:** When running via Docker Compose, set `POSTGRES_HOST` to the database service name, which by default is `db`:
 >
 > ```env
-> POSTGRES_HOST=
+> POSTGRES_HOST=db
 > ```
 
 ## Data Model
