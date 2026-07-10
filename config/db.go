@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/matheusteodorosnts/pizzaria-api/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -20,6 +21,8 @@ func initializeDB() *gorm.DB {
 	if err != nil {
 		panic(err)
 	}
+
+	db.AutoMigrate(&models.Pizza{})
 
 	return db
 }
