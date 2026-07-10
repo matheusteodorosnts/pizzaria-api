@@ -5,6 +5,7 @@ import (
 
 	"github.com/joho/godotenv"
 	"github.com/matheusteodorosnts/pizzaria-api/config"
+	"github.com/matheusteodorosnts/pizzaria-api/handler"
 	"github.com/matheusteodorosnts/pizzaria-api/router"
 )
 
@@ -15,5 +16,6 @@ func main() {
 	}
 
 	config.InitializeConfig()
+	handler.InitializeHandler()
 	router.Initialize()
 }
